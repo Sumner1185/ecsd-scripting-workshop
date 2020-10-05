@@ -15,4 +15,4 @@ exit 0
 fi
 
 // 2
-$ at 18:00
+$ * * * * * /Users/alastairsumner/academy-alastairsumner/ecsd-scripting-workshop/task_3
