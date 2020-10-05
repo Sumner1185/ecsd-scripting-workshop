@@ -13,7 +13,7 @@ echo $Result
 echo ((4**6) + (5**3))
 
 //4
-if ($1 == $2) then
+if (INTEGER1 -eq INTEGER@) then
 echo "The same!"
 else
 echo "Not the same!"
