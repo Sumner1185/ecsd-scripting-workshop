@@ -1,3 +1,5 @@
+#!/bin/bash
+
 // 1 - Define a variable.
 export MyFirstVariable=test
 
@@ -6,6 +8,7 @@ export MySecondVariable="Hello world, can you say 'how are you?'"
 
 // 3 - Try to pass the shellopts environmental variable to a script and print it using echo.
 export SHELLOPTS
+echo $1
 
 // 4 - Using shell command, create a file with a special character - e.g. single quote.
  touch "What's up guys"
