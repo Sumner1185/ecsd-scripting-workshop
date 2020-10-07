@@ -1,0 +1,3 @@
+function addnums {
+  echo (($1 + $2))
+}
