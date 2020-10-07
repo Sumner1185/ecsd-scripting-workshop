@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file1="$1"
+file2="$2"
+if ( test $file1 -nt $file2 ); then
+  echo "$file1 is newer than $file2"
+else
+  echo "$file2 is newer than $file1"
+fi 
