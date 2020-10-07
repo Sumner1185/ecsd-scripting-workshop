@@ -1,9 +1,17 @@
 #!/bin/bash
 
-urlsarray=(www.google.com, www.yahoo.com, www.apple.com)
-declare -a LATENCIES
+echo "Please enter URL's..."
+read -a URLS
+declare -a LATENCY_LIST
 
-for url in ${urlsarray[@]};
+for url in ${URLS[@]} 
 do
-tempvar=$(ping -c 5 $link | grep "round-trip" | cut -f5 -d "/")
-LATENCIES+=''
+latency=$(ping -c 5 $url | grep "round-trip" | cut -f5 -d"/")
+LATENCY_LIST+=("$url $latency")
+done
+
+for item in ${LATENCY_LIST[@]}
+do
+echo $item
+done
+
