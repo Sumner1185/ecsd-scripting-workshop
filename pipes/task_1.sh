@@ -6,6 +6,6 @@ cd $sourcedir
 if [ ! -d $sourcedir ]; then
    echo "Directory $sourcedir does not exist!"
 else
-  ls -l | grep "^-r"
+  ls -l | grep "^.r"
 fi 
 
